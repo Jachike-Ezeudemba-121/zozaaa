@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    animation: ease-in;
+    animation-delay: 1s;
+    opacity: 0.9;
+    background-image: linear-gradient(120deg, lightgreen, rgb(228, 135, 228), skyblue);
+}
+header{
+    padding: 1%;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(128, 0, 32),  purple, darkblue, rgb(128, 0, 32));
+    border-bottom: 2px solid goldenrod;
+}
+header h1{
+    font-size: 3.2rem;
+    padding: 5px;
+    color: goldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 2px slategrey;
+}
+header p{
+    font-size: 1.8rem;
+    font-style: italic;
+    color: slategrey;
+    opacity: 0.9;
+    padding: 5px;
+}
+/*
+.fs-btn{
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.fs{
+    position: relative;
+    display: inline-block;
+}
+.fs-content{
+    display: none;
+    position: absolute;
+    background-color: lavender;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+    z-index: 1;
+}
+.fs-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.fs:hover .fs-content{
+    display: block;
+}
+*/
+nav {
+    padding: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: green;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 15px;
+    font-size: 2.1rem;
+    font-family: sans-serif;
+}
+nav ul li{
+    list-style-type: none;
+}
+.welcome h1{
+    font-size: 2.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding: 8px;
+    color: rgb(128, 0, 32);
+    text-transform: uppercase;
+    text-shadow: 2px 1px 2px red;
+}
+.welcome p{
+    font-family: cursive;
+    font-size: 22px;
+    padding: 10px;
+    line-height: 32px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+span{
+    color: purple;
+}
+.about{
+    display: flex;
+    width: 100%;
+    min-height: 60vh;
+    
+}
+.her-details{
+    width: 60%;
+    position: relative;
+    margin-left: 75vh;
+    border-top-left-radius: 15px;
+    border-top: 1.3px solid peachpuff;
+    border-top-color: peachpuff;
+    border-left: 1.3px solid peachpuff;
+    min-height: 60vh;
+    top: 3%;
+}
+.about-her h1{
+    text-align: center;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    color: rgb(128, 0, 32);
+    text-shadow: 2px 1px 2px red;
+}
+.about-her p{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 10px;
+    line-height: 28px;
+    text-align: center;
+}
+.slideshow-container{
+    opacity: 1;
+    margin-top: 10vh;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    top: 105%;
+    left: 18%;
+}
+.wrapper{
+    opacity: 1;
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+img{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+footer{
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    position: relative;
+    margin-top: 21vh;
+    margin-bottom: 10px;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.social h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    color: rgb(128, 0, 32);
+    text-shadow: 2px 1px 2px red;
+}
+.social p{
+    line-height: 28px;
+    font-family: sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.zoza1{
+    color: purple;
+}
+.zoza2{
+    color: green;
+}
+marquee{
+    margin-top: -43px;
+    font-style: italic;
+    font-size: 30px;
+    color: snow;
+    padding: 10px;
+    position: absolute;
+}
+.her-details a{
+    text-decoration: none;
+    color: green;
+}
+.title{
+    font-size: 88px;
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    -webkit-text-stroke: 2px darkblue;
+    color: transparent;
+    max-height: 200px;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(rgb(128, 0, 32), purple);
+    background-repeat: no-repeat;
+    background-position: -250px 0;
+    animation: backcolor 7s linear infinite alternate;
+}
+.thezoza{
+    position: relative;
+    top: 63vh;
+    left: 8%;
+    max-width: 500px;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+@media only screen and (max-width: 640px){
+    body{
+        width: 100%;
+        max-width: 100%;
+    }
+    header h1{
+        font-size: 2.5rem;
+    }
+    header p{
+        font-size: 1.3rem;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+    }
+    .welcome p{
+        font-size: 20px;
+        text-align: center;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .slideshow-container{
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 127vh;
+        left: 50%;
+    }
+    .about{
+        display: block;
+    }
+    .her-details{
+        width: 100%;
+        margin-left: 0vh;
+        margin-top: 115vh;
+    }
+    footer{
+        margin-top: 5vh;
+    }
+    .title{
+        font-size: 80px;
+        text-align: center;
+        background-position: -400px 0;
+    }
+    .thezoza{
+        top: -32vh;
+        position: relative;
+        text-align: center;
+    }
+    .about-her{
+        border: 2px solid black;
+        padding: 5px;
+        box-shadow: 2px 4px 2px darkslateblue;
+    }
+    .social{
+        margin-top: 5px;
+        padding: 5px;
+        border: 2px solid black;
+        box-shadow: 2px 3px 2px darkslateblue;
+    }
+    .pt{
+        position: absolute;
+        margin-top: -15vh;
+    }
+    marquee{
+        margin-top: 10px;
+        font-style: italic;
+        font-size: 30px;
+        color: snow;
+        padding: 8px;
+        position: relative;
+    }
+}

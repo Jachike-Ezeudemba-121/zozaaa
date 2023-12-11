@@ -1,0 +1,1 @@
+alert('Prepare to be Amazed!')
